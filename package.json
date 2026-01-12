@@ -1,6 +1,6 @@
 {
 	"name": "tanstack-db-atom",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"private": false,
 	"type": "module",
 	"author": "",
@@ -45,7 +45,7 @@
 		"build:bundle": "rolldown -c",
 		"build:types": "tsc -p tsconfig.build.json",
 		"dev": "rolldown -c --watch",
-		"prepublishOnly": "bun run build"
+		"publish": "npm publish"
 	},
 	"peerDependencies": {
 		"@effect-atom/atom-react": ">=0.4.0",
@@ -61,5 +61,9 @@
 		"@effect/language-service": "0.64.1",
 		"rolldown": "^1.0.0-beta.1",
 		"typescript": "^5.9.3"
+	},
+	"publishConfig": {
+	  "tag": "latest",
+		"access": "public"
 	}
 }
